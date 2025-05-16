@@ -1,0 +1,31 @@
+### 🔧 **1. Setup & Installation**
+
+* Installs necessary libraries:
+
+  * `kaggle`, `transformers`, `torchaudio`, `librosa`, `noisereduce`
+  * `openai-whisper` (optional)
+  * `datasets`
+
+---
+
+### 📁 **2. File Upload**
+
+* Uses `google.colab.files.upload()` to upload audio datasets (probably for Colab-based execution).
+
+---
+
+### 🧹 **3. Data Cleaning**
+
+* Loads an audio file using `librosa`.
+* Removes silence using `librosa.effects.trim`.
+* Normalizes the audio signal.
+* Plots the **cleaned waveform** for visual inspection.
+
+---
+
+### 📊 **4. Data Analysis**
+
+* Computes and displays a **spectrogram** of the normalized audio.
+* Mentions that the goal is to analyze accents and detect misclassifications (though deeper classification logic is not yet visible here).
+
+
